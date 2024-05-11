@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and interlinking webpage</title>
+</head>
+<body>
+<!-- 
+    NOTE :---
+    (1). target="_blank" : Is attribute ko ancher tag ke andar dene se hamara webPage , "NewWindow" me open hoga . 
+    (2). href="mailto:yourMail@gmail.com" : "mailto" Iske baad jo mail likhe ho , user jab is link ko click karega to user dwara us mail me mail bheja jayega . 
+    (3). download : Anchar tag me "download" attribute dene se jo bhi file/pdf/document ka address diya gaya hai wo downlode hojayega . 
+ -->
+
+    <!-- There are three types of list :
+        (1). Ordered List 
+        (2). Unordered List
+        (3). Discription List  -->
+
+        <!-- (1). Ordered List -->
+
+    <ol>
+        <li type="i">The table number is 1</li>
+        <li type="I">The table number is 2</li>
+        <li type="a">The table number is 3</li>
+        <li type="A">The table number is 4</li>
+        <li type="none">The table number is 5</li>
+        <li>The table number is 6</li>
+        <li>The table number is 7</li>
+        <li>The table number is 8</li>
+        <li>The table number is 9</li>
+        <li>The table number is 10</li>
+    </ol>
+
+    <!-- (2). Unordered List -->
+    <ul>
+        <li type="circle">The list number is 1</li>
+        <li type="square">The list number is 2</li>
+        <li type="disc">The list number is 3</li>
+        <li type="none">The list number is 4</li>
+        <li>The list number is 5</li>
+        <li>The list number is 6</li>
+        <li>The list number is 7</li>
+        <li>The list number is 8</li>
+        <li>The list number is 9</li>
+        <li>The list number is 10</li>
+    </ul>
+
+    <!-- (3). Discription List -->
+    <!-- <dl> : "dl" stand for "Discription List" .
+        <dt></dt> : "dt" stand for "Discription Term" .
+        <dd></dd> : "dd" stand for "Discription Data" .
+    </dl> -->
+    <dl>
+        <dt>Nokia</dt>
+        <dd>This is one of the oldest phone.</dd>
+
+        <dt>Samsung</dt>
+        <dd>The display of this phone is the best quality.</dd>
+
+        <dt>Motorola</dt>
+        <dd>This is long lasting phone.</dd>
+
+        <dt>Iphone</dt>
+        <dd>This is branded phone.</dd>
+    </dl>
+
+    <!-- Interling Webpages -->
+    <ul>
+        <a href="https://www.google.com"><li>Click me to open Google </li></a>
+
+        <a href="https://www.instagram.com"><li>Click me to open Insta </li></a>
+        
+        <a href="https://www.google.com/maps"><li>Click me to open Map </li></a>
+
+        <a href="https://www.facebook.com"><li>Click me to open Facebook </li></a>
+        
+        <a href="https://twitter.com"><li>Click me to open X </li></a>
+
+        <a href="./linkedWebpageTo9.html" target="_blank" ><li>Click me open Hellow Page</li></a>
+
+        <a href="mailto:yourMail@gmail.com"><li>Mail me</li></a>
+
+        <a href="./one.pdf" download ><li>Click me download file</li></a>
+
+        <a href="#"><li>Click me to to open nothing.</li></a>
+        <!-- href="#" : href me "#" dene se ye hame kisi bhi web page ko open nahi karega . -->
+        
+    </ul>
+
+
+</body>
+</html>

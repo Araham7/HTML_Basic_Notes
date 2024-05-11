@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms of HTML</title>
+</head>
+<body>
+                                        <!-- form -->
+
+    <!-- id="" : 'data' form ke kis field ka hai use janne ke liye "id" ka use kiya jata hai. -->
+    <!-- name="" : kisi field ke accourding kya value server me aa raha hai use janne keliye humlog name attribte ka prayog karten hai.  -->
+    <!-- <label for=""></label> : Lable hame ye batlata hai ki form ke kis hisse me kya fill karna hai. -->
+    <!-- <fieldset></fieldset> : fieldset ke andar me form ka code likhne se hamara ek form ka code dusre form ke code se saperate rehta hai.Aur ye hamare form me border bhi de deta hai -->
+    <!-- <legend></legend>: Legend ke anadar hum jo likhten hai form ke border ke top left me show hota hai. -->
+
+    <!-- 
+        <input type="radio" checked> , <input type="checkbox" checked> : input-type "radio" aur "checkbox" me . 
+        <input type="text" disabled > : input tag me "disabled" attribute dene se hamara text disable hojata hai . 
+
+        <input type="text" value="fake_name"> : input type="text" , ke "value" attribute me jo kuch bhi denge wahi text show karega lekin humlog ise change kar sakten hai .
+
+        <input type="text" value="fake_name" readonly disabled> : input type="text" , ka readonly attribute dalnese value ko humlog change nahi kar sakenge .
+
+        <input type="text" value="fake_name" readonly disabled> : input type="text" , ka desabled attribute hamare dwara dewara text me likhe gaye text ko desable kar dega .
+     -->
+<!-- 
+    <form action="" method="get"></form> : form me method="get" denese hamare dwara jab form ko submit kiya jayega tab wo form ke data ko  url(link) me store kar ke bhejega .
+
+    <form action="" method="post"></form> : Jab humlog form ko submit karenge tab ye hamare dwra submit kiye gaye data ko url me dal karke server me nahi bhejta hai .
+
+    <form action="" method="post" action="./path-name"></form> : Ye hamare dwara submited form ke data ko kisi ek particular path me handle karne ke liye diya jata hai .
+-->
+
+    <form method="get" target="_blank"> 
+        <fieldset>
+            <legend>User Details</legend>
+        <label for="name">Enter your full_name here :</label>
+        <input type="text" id="name" name="full_name" value="Araham Abeddin" readonly disabled>
+
+        <br>
+
+        <label for="Email">Enter your email here :</label>
+        <input type="email" name="email" id="Email">
+
+        <br>
+
+        <label for="address">Enter your address here :</label>
+        <textarea name="address" id="address" cols="25" rows="5"></textarea>
+
+        <br>
+
+        <label for="DOB">Ente your DOB</label>
+        <input type="date" name="DOB" id="DOB">
+
+        <br>
+
+        <label for="user_password">Enter the password :</label>
+        <input type="password" name="password" id="user_password">
+
+<br>
+
+        <!-- To choose only one option from manyoption : -->
+        <!-- NOTE:
+            radio buttons me yadi same name hoto humlog kewal matra ek hi button ko select kar sakten hai.
+        -->
+        Select Your Gender :
+        <br>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male" value="Male" >
+        <br>
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female" value="Female" checked>
+<br>
+        <label for="Transgender">Transgender</label>
+        <input type="radio" name="Gender" id="Transgender" value="Transgender">
+<br>
+        <label for="fav_num">Select your favouratenumber between 10 to 60 </label>
+        <input type="number" name="num" id="fav_num" min="10" max="60">
+
+<br>
+
+        <!-- select your favourate color:
+        <input type="color" name="" id=""> -->
+        <!-- NOTE:
+            checkboxes me yadi same name hoto humlog ek se jyada checkbox ko check(select) kar sakten hai.
+        -->
+        Select your favourate movies :
+        <label for="Avenger">Avenger</label>
+        <input type="checkbox" name="movies" id="Avenger" value="Avenger">
+        <br>
+        <label for="Thor">Thor</label>
+        <input type="checkbox" name="movies" id="Thor" value="Thor">
+        <br>
+        <label for="Ironman">Ironman</label>
+        <input type="checkbox" name="movies" id="Ironman" value="Ironman" checked disabled>
+
+        <br>
+
+        <input type="submit" value="Click Query">
+        </fieldset>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Parent-Child Grouping </title>
+</head>
+<body>
+
+
+    <!-- (1). Parent-Child(tag1>tag2>tag3>tag4) -->
+    <aside>
+        <main>
+            <nav>
+                <div>
+                    <p></p>
+                </div>
+            </nav>
+        </main>
+    </aside> <!-- aside>main>nav>div>p -->
+
+
+    <!-- (2). Adding Siblings(+) -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p> <!-- p+p+p+p+p+p+p -->
+
+
+    <!-- (3). Multiplication(*) -->
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav> <!-- nav>ul>li*6 -->
+
+
+    <!-- (4). Grouping -->
+    <div>
+        <nav>
+            <ul>
+                <li>This is liste number 1</li>
+                <li>This is liste number 2</li>
+                <li>This is liste number 3</li>
+                <li>This is liste number 4</li>
+                <li>This is liste number 5</li>
+            </ul>
+        </nav>
+        <main>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </main>
+    </div>  <!-- div>(nav>ul>li{This is liste number $}*5)+main>p*5 -->
+
+</body>
+</html>
